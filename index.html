@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>マイページ</title>
+    <script
+      src="https://kit.fontawesome.com/d0a601627a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://yubinbango.github.io/yubinbango/yubinbango.js"
+      charset="UTF-8"
+    ></script>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h2>スタンプラリー 遊び方</h2>
+      <ul class="menu">
+        <div class="menu-block">
+          <li>LINEの友達追加をしよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li><a href="#step2"></a>ユーザー登録をしよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>スポットのQRコードを読み取ろう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>スポットIDをコピーしよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>スポットIDを貼り付けてスタンプをゲットしよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>マップを活用しよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>スタンプラリーカードで現在のスタンプ数を確認しよう！</li>
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div class="menu-block">
+          <li>景品に応募しよう！</li>
+        </div>
+      </ul>
+    </nav>
+    <div class="box">
+      <h2 id="step2">STEP２ ユーザー登録をしよう！</h2>
+    </div>
+    <div class="slider-group">
+      <div class="slider-card">
+        <img src="./2-1.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./2-2.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./2-3.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./2-4.png" class="slider-card-img" />
+      </div>
+    </div>
+    <br />
+    <div class="box">
+      <h2>STEP３ スポットのQRコードを<br />読み取ろう！</h2>
+    </div>
+    <div class="slider-group">
+      <div class="slider-card">
+        <img src="./3-1.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./3-2.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./3-3.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./3-4.png" class="slider-card-img" />
+      </div>
+      <br />
+    </div>
+
+    <div class="box">
+      <h2>STEP４ スポットIDをコピーしよう！</h2>
+    </div>
+    <div class="slider-group">
+      <div class="slider-card">
+        <img src="./4-1.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./4-2.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./4-3.png" class="slider-card-img" />
+      </div>
+    </div>
+    <br />
+
+    <div class="box">
+      <h2>STEP５ スポットIDを貼り付けて<br />スタンプをゲットしよう！</h2>
+    </div>
+    <div class="slider-group">
+      <div class="slider-card">
+        <img src="./5-1.png" class="slider-card-img" />
+      </div>
+
+      <div class="slider-card">
+        <img src="./5-2.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./5-3.png" class="slider-card-img" />
+      </div>
+      <div class="slider-card">
+        <img src="./5-4.png" class="slider-card-img" />
+      </div>
+    </div>
+  </body>
+
+  <style>
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: li;
+    }
+
+    .menu-block {
+      position: relative;
+    }
+
+    .menu-block li {
+      position: relative;
+      font-weight: bold;
+      line-height: 28px;
+      margin: 10px 0;
+      padding-left: 40px;
+      counter-increment: li;
+      border: dashed 3px;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -ms-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    /* 4色循環 */
+    .menu-block:nth-of-type(4n + 1) li {
+      border-color: #ffa79f;
+    }
+    .menu-block:nth-of-type(4n + 2) li {
+      border-color: #fbaf5d;
+    }
+    .menu-block:nth-of-type(4n + 3) li {
+      border-color: #9fcdff;
+    }
+    .menu-block:nth-of-type(4n + 4) li {
+      border-color: #afebb6;
+    }
+
+    /* 番号 */
+    .menu-block li::before {
+      counter-increment: li/2;
+      content: counter(li);
+      position: absolute;
+      left: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    /* 番号背景色 */
+    .menu-block:nth-of-type(4n + 1) li::before {
+      background: #ffa79f;
+    }
+    .menu-block:nth-of-type(4n + 2) li::before {
+      background: #fbaf5d;
+    }
+    .menu-block:nth-of-type(4n + 3) li::before {
+      background: #9fcdff;
+    }
+    .menu-block:nth-of-type(4n + 4) li::before {
+      background: #afebb6;
+    }
+
+    /* hover */
+    .menu-block:nth-of-type(4n + 1) li:hover {
+      background: #ffa79f;
+    }
+
+    .menu-block:nth-of-type(4n + 1) li:hover::before {
+      background: #fff;
+      color: #ffa79f;
+    }
+
+    .menu-block:nth-of-type(4n + 2) li:hover {
+      background: #fbaf5d;
+    }
+
+    .menu-block:nth-of-type(4n + 2) li:hover::before {
+      background: #fff;
+      color: #fbaf5d;
+    }
+
+    .menu-block:nth-of-type(4n + 3) li:hover {
+      background: #9fcdff;
+    }
+
+    .menu-block:nth-of-type(4n + 3) li:hover::before {
+      background: #fff;
+      color: #9fcdff;
+    }
+
+    .menu-block:nth-of-type(4n + 4) li:hover {
+      background: #afebb6;
+    }
+
+    .menu-block:nth-of-type(4n + 4) li:hover::before {
+      background: #fff;
+      color: #afebb6;
+    }
+
+    /* ↓アイコン位置（番号の真下） */
+    .menu-block i {
+      display: block;
+      position: relative;
+      padding: 10px;
+
+      margin-top: -5px;
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .box {
+      margin: 2em 0;
+      position: relative;
+      padding: 0.25em 1em;
+      border: solid 5px skyblue;
+      border-radius: 3px 0 3px 0;
+    }
+
+    .box:before,
+    .box::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: solid 5px skyblue;
+      border-radius: 50%;
+    }
+
+    .box:after {
+      top: -20px;
+      left: -15px;
+    }
+
+    .box:before {
+      bottom: -20px;
+      right: -15px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-group {
+      position: relative;
+      width: 100%;
+      min-height: 200px;
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    .slider-card {
+      flex: 0 0 auto;
+      max-width: 250px;
+      height: 100%;
+      margin-right: 20px;
+    }
+
+    .slider-card-img {
+      width: 100%;
+
+      object-fit: cover;
+    }
+  </style>
+</html>
