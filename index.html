@@ -159,6 +159,7 @@
 
         .nav_list{
             list-style:none;
+            counter-reset: li;
 
         }
 
@@ -181,10 +182,47 @@
         position: relative;
         font-weight: bold;
         line-height: 28px;
-        
+        padding-left: 40px;
         margin: 10px 0;
         }
+
+
+        .nav_list li:before{
+          counter-increment: li;
+        content: counter(li);
+          position: absolute;
+          left: -1px;
+          color: #fff;
+          text-align: center;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          top: 50%;
+          -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        }
+
+        .nav_list li:nth-child(4n+1):before{
+          background: #FFA79F;
+        }
         
+        .nav_list li:nth-child(4n+2):before{
+          background: #fbaf5d;
+        }
+        
+        .nav_list li:nth-child(4n+3):before{
+          background: #9FCDFF;
+        }
+        
+        .nav_list li:nth-child(4n+4):before{
+          background: #AFEBB6;
+        }
+        
+
         #drawer_input:checked ~ .nav_content{
             left: 0;
         }
@@ -395,6 +433,9 @@
 </body>
 
 <style>
+    .menuButton{
+    font-size: 200%
+    }
     .explain{
         counter-reset: li;
         font: 14px/1.6 'arial narrow', sans-serif;
